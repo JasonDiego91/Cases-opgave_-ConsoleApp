@@ -11,9 +11,35 @@ namespace Cases_opgave__ConsoleApp
     {
         static void Main(string[] args)
         {
-            new MilitaryTimeView();
+            Console.WriteLine("vælg program - Fodbold (1) MilitaryTime (2) Dansekonkurrence (3) Password (4)");
 
-            new FodboldView();
+            int number = int.Parse(Console.ReadLine());
+
+            switch (number)
+            {
+                case 1:
+                    new FodboldView();
+                    break;
+
+                case 2:
+                    new MilitaryTimeView();
+                    break;
+
+                case 3:
+                    new DansekonkurrenceCase();
+                    break;
+
+                case 4:
+                    new password();
+                    break;
+
+                default:
+                    Console.WriteLine("Forkert indtasting");
+                    break;
+
+            }
+            Console.ReadKey();
+
         }
     }
 }

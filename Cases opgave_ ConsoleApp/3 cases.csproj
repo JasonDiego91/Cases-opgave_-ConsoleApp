@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DanseKonkurrence.cs" />
+    <Compile Include="DansekonkurrenceCase.cs" />
     <Compile Include="FodboldView.cs" />
     <Compile Include="MilitaryTimeView.cs" />
     <Compile Include="password.cs" />

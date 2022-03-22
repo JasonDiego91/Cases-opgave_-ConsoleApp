@@ -11,7 +11,7 @@ namespace Cases_opgave__ConsoleApp
     {
         public MilitaryTimeView()
         {
-            MilitaryTime militaryTime = new MilitaryTime();
+            MilitaryTimelogic militaryTime = new MilitaryTimelogic();
 
 
             militaryTime.ConvertTime(Console.ReadLine());

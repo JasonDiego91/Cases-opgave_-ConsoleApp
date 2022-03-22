@@ -8,12 +8,19 @@ namespace Cases_opgave__ConsoleApp
         public FodboldView()
         {
 
-            Console.WriteLine("How many passes");
-            var passses = Console.ReadLine();
+            Console.WriteLine("Hvor mange afleveringer?");
+            var aflevering = Console.ReadLine();
+            Console.Clear();
+
+            Console.WriteLine("Er der scoret så skriv mål");
+            var mål = Console.ReadLine();
+            Console.Clear();
+            
+            Fodboldlogic obj1 = new Fodboldlogic();
+            var result = obj1.HowMuchDoWeCheer(aflevering, mål);
 
 
-            Fodbold obj1 = new Fodbold();
-            var result = obj1.HowMuchDoWeCheer(passses);
+
 
             Console.WriteLine(result);
             Console.ReadKey();

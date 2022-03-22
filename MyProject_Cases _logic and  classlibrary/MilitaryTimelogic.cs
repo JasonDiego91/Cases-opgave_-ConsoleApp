@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyProject_Cases__logic_and__classlibrary
 {
-    public class MilitaryTime
+    public class MilitaryTimelogic
     {
         //Access Level,
         //return type (string int, bool, object, ect.)

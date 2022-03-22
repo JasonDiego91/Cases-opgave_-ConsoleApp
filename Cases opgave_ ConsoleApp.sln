@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3 cases", "Cases opgave_ Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProject_Cases__logic_and__classlibrary", "MyProject_Cases _logic and  classlibrary\MyProject_Cases__logic_and__classlibrary.csproj", "{4C807679-5EF8-4D0A-91E0-555F03319298}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2643EF34-3805-45A6-9065-80ACA4D096D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

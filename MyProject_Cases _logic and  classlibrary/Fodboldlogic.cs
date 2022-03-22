@@ -6,38 +6,61 @@ using System.Threading.Tasks;
 
 namespace MyProject_Cases__logic_and__classlibrary
 {
-    public class Fodbold
+    public class Fodboldlogic
     {
-        public string HowMuchDoWeCheer(string antal)
+        public string HowMuchDoWeCheer(string antal, string mål)
         {
             string result = "";
-            
+            string _mål = mål;
 
             int aflevering = int.Parse(antal);
 
-            if (aflevering >= 10 )
+
+
+
+            if (_mål == "mål")
+            {
+                result = "Olé olé ole";
+                return result;
+
+            }
+
+            if (aflevering >= 10)
             {
                 result = "High Five - Jubel!!!";
+                return result;
+
             }
-            else if (aflevering < 1)
+
+            if (aflevering < 1)
             {
                 result = "Shh";
+                return result;
+
             }
+
             else
             {
                 for (int i = 0; i < aflevering; i++)
                 {
                     result = result + "Huh!!! ";
+                    return result;
+
                 }
+
             }
 
-            
-            return result;
-            
-        }
-    }
-       
+            return "";
 
-    
+
+
+
+
+        }
+
+    }
+
+
+
 }
 
