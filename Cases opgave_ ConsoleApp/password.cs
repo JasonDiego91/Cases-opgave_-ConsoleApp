@@ -1,8 +1,8 @@
-﻿using MyProject_Cases__logic_and__classlibrary;
+﻿using logiclibrary;
 using System;
 
 
-namespace Cases_opgave__ConsoleApp
+namespace threecases_classes
 {
     internal class password
     {
@@ -23,9 +23,9 @@ namespace Cases_opgave__ConsoleApp
             passWord = Console.ReadLine();
             godkendt = true;
             string skrivtext = brugernavn + passWord;
-
-            passwordlogic obj1 = new passwordlogic();
-            obj1.PasswordMain(passWord, brugernavn, skrivtext, godkendt);
+            string replacetext = skrivtext;
+            brugernavnlogic obj1 = new brugernavnlogic();
+            obj1.PasswordMain(passWord, brugernavn, skrivtext,replacetext, godkendt);
 
 
 

@@ -1,11 +1,11 @@
-﻿using MyProject_Cases__logic_and__classlibrary;
+﻿using logiclibrary;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cases_opgave__ConsoleApp
+namespace threecases_classes
 {
     internal class DansekonkurrenceCase
     {

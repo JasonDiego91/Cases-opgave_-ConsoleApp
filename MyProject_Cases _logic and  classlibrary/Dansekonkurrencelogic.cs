@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyProject_Cases__logic_and__classlibrary
+namespace logiclibrary
 {
     public class Dansekonkurrencelogic
     {
