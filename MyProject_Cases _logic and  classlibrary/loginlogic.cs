@@ -23,10 +23,11 @@ namespace logiclibrary
             }
 
         }
-        public string login(string brugernavnLogin, string adgangskodeLogin)
+        private string login(string brugernavnLogin, string adgangskodeLogin)
         {
-            string bruger = System.IO.File.ReadAllText(@"C:\Users\jassmi\Desktop\Bruger&Pass.txt");
-            string adgangskode = System.IO.File.ReadAllText(@"C:\Users\jassmi\Desktop\Bruger&Pass.txt");
+            string bruger = System.IO.File.ReadAllText(@"C:\Users\jassmi\Desktop\Bruger.txt");
+            
+            string adgangskode = System.IO.File.ReadAllText(@"C:\Users\jassmi\Desktop\adgangskoder.txt");
 
             if (bruger == brugernavnLogin && adgangskode == adgangskodeLogin)
             {
@@ -34,7 +35,7 @@ namespace logiclibrary
             }
             else
             {
-                return "forkert brugernvan eller adgangskode";
+                return "forkert brugernavn eller adgangskode";
             }
 
 

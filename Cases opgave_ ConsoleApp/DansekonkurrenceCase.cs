@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace threecases_classes
+namespace threecases
 {
     internal class DansekonkurrenceCase
     {

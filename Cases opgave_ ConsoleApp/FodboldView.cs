@@ -1,7 +1,6 @@
-﻿using logiclibrary;
-using System;
-
-namespace threecases_classes
+﻿using System;
+using logiclibrary;
+namespace threecases
 {
     internal class FodboldView
     {

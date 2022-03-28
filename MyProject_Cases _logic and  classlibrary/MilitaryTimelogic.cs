@@ -19,7 +19,7 @@ namespace logiclibrary
             string[] subs = s.Split(' ', ':');
 
             s = "";
-
+            
             int hours = int.Parse(subs[0]);
 
             if (subs[2].ToLower() == "pm")

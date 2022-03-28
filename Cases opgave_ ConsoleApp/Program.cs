@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using logiclibrary;
 
-namespace threecases_classes
+namespace threecases
 {
     internal class Program
     {
@@ -20,46 +20,54 @@ namespace threecases_classes
             Console.WriteLine("indstast adgangskode");
             adgangskodeLogin = Console.ReadLine();
             logiclibrary.loginlogic loginObjekt = new logiclibrary.loginlogic();
-            string loginResultat = loginObjekt.loginforcases(brugernavnLogin, adgangskodeLogin);
-            Console.WriteLine(loginResultat);
+            string loginresultat = loginObjekt.loginforcases(brugernavnLogin, adgangskodeLogin);
+            Console.WriteLine(loginresultat);
             Console.ReadKey();
-            Console.WriteLine("vælg program - Fodbold (1) MilitaryTime (2) Dansekonkurrence (3) Password (4)");
+            Console.Clear();
 
-            if (loginResultat == "login er godkendt")
+
+            if (loginresultat == "login er godkendt")
             {
+
 
                 do
                 {
-                    int number = int.Parse(Console.ReadLine());
-                    indtast = Console.ReadLine().ToLower();
                     
-                    switch (number)
+                    Console.WriteLine("vælg program - Fodbold (1) MilitaryTime (2) Dansekonkurrence (3) Password (4) eller tast sluk for at lukke");
+                    indtast = Console.ReadLine();
+
+                    switch (indtast)
                     {
-                        case 1:
+                        case "1":
                             new FodboldView();
                             break;
 
-                        case 2:
+                        case "2":
                             new MilitaryTimeView();
                             break;
 
-                        case 3:
+                        case "3":
                             new DansekonkurrenceCase();
                             break;
 
-                        case 4:
-                            new password();
-                            break;
-
-                        default:
-                            Console.WriteLine("Forkert indtasting");
+                        case "4":
+                            new adgangskodecase();
                             break;
 
                     }
-                    Console.ReadKey();
-                } while (indtast != "sluk");
+
+                }
+
+                while (indtast != "5");
+                Console.WriteLine("lukker program");
+                Console.ReadKey();
+               
+
+
             }
-            Console.ReadKey();
+
         }
+
     }
+
 }
