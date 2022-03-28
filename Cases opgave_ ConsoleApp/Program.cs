@@ -33,7 +33,7 @@ namespace threecases
                 do
                 {
                     
-                    Console.WriteLine("vælg program - Fodbold (1) MilitaryTime (2) Dansekonkurrence (3) Password (4) eller tast sluk for at lukke");
+                    Console.WriteLine("vælg program - fodbold - (1) dansekonkurrence - (2)  password ændring - (3)   for at lukke - (4)");
                     indtast = Console.ReadLine();
 
                     switch (indtast)
@@ -43,22 +43,18 @@ namespace threecases
                             break;
 
                         case "2":
-                            new MilitaryTimeView();
-                            break;
-
-                        case "3":
                             new DansekonkurrenceCase();
                             break;
 
-                        case "4":
+                        case "3":
                             new adgangskodecase();
                             break;
-
+                                                    
                     }
 
                 }
 
-                while (indtast != "5");
+                while (indtast != "4");
                 Console.WriteLine("lukker program");
                 Console.ReadKey();
                

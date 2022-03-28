@@ -47,7 +47,6 @@
   <ItemGroup>
     <Compile Include="DansekonkurrenceCase.cs" />
     <Compile Include="FodboldView.cs" />
-    <Compile Include="MilitaryTimeView.cs" />
     <Compile Include="adgangskodecase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

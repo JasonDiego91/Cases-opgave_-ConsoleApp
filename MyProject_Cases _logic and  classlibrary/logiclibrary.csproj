@@ -44,7 +44,6 @@
     <Compile Include="Dansekonkurrencelogic.cs" />
     <Compile Include="Fodboldlogic.cs" />
     <Compile Include="loginlogic.cs" />
-    <Compile Include="MilitaryTimelogic.cs" />
     <Compile Include="adgangskodelogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
