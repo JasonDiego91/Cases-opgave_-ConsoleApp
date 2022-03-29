@@ -14,13 +14,17 @@ namespace threecases
             string indtast, brugernavnLogin, adgangskodeLogin;
 
             Console.WriteLine("velkommen til");
-            Console.ReadKey();
+            Console.Clear();
+            
             Console.WriteLine("indtast brugernavn: ");
             brugernavnLogin = Console.ReadLine().ToLower();
+            
             Console.WriteLine("indstast adgangskode");
             adgangskodeLogin = Console.ReadLine();
+            
             logiclibrary.loginlogic loginObjekt = new logiclibrary.loginlogic();
             string loginresultat = loginObjekt.loginforcases(brugernavnLogin, adgangskodeLogin);
+            
             Console.WriteLine(loginresultat);
             Console.ReadKey();
             Console.Clear();

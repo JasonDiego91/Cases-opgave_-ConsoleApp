@@ -40,11 +40,6 @@ namespace threecases
             Console.WriteLine(adgangskoderesultat);
             Console.ReadKey();
 
-
-
-
-
-
         }
 
     }

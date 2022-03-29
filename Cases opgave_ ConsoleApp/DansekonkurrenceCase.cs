@@ -11,6 +11,7 @@ namespace threecases
     {
         public DansekonkurrenceCase()
         {
+        
             Console.WriteLine("Hvad hedder den første danser ?");
             var navn1 = Console.ReadLine();
 
@@ -22,12 +23,11 @@ namespace threecases
 
             Console.WriteLine($"hvor mange point fik {navn2}?");
             var point2 = Convert.ToInt32(Console.ReadLine());
-
-            Dansekonkurrencelogic Dansekonkurrenceclass = new Dansekonkurrencelogic();
-            var udregning = Dansekonkurrenceclass; 
-
-            Console.WriteLine(udregning.endesvar); 
             
+            logiclibrary.danselogic DanseObjekt = new logiclibrary.danselogic();
+            var svar = DanseObjekt.danselogic();
+
+            Console.WriteLine(svar);
             Console.ReadKey();
 
         }

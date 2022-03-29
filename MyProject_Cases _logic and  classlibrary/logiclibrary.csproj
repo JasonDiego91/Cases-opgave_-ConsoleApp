@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dansekonkurrencelogic.cs" />
+    <Compile Include="danselogic.cs" />
     <Compile Include="Fodboldlogic.cs" />
     <Compile Include="loginlogic.cs" />
     <Compile Include="adgangskodelogic.cs" />
