@@ -8,31 +8,22 @@ namespace logiclibrary
 {
     public class danselogic
     {
-        int point1 = 0;
-        int point2 = 0;
-        int allepoint;
-        string navn1 = "";
-        string navn2 = "";
-        string allenavne = "";
-        string endesvar;
+        public int point;
+        public string navn;
 
 
-        public static danselogic operator +(danselogic danse1, danselogic danse2)
+        public danselogic(string navn, int point)
         {
-            
+            this.navn = navn;
+            this.point = point;
+        }
 
-            danselogic udregning = new danselogic();
-            danselogic svar = new danselogic();
+        public static danselogic operator +(danselogic danser1, danselogic danser2)
+        {
+            string navne = danser1.navn + " & " + danser2.navn;
+            int points = danser1.point + danser2.point;
 
-            udregning.allenavne = danse1.navn1 + $"&{danse2.navn2}";
-
-            udregning.allepoint = danse1.point1 + danse2.point2;
-
-            udregning.endesvar = udregning.allenavne + udregning.allepoint;
-
-            svar = udregning;
-
-            return svar;
+            return new danselogic(navne, points);
         }
 
 

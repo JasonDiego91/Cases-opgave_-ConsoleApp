@@ -39,6 +39,7 @@ namespace threecases
                     
                     Console.WriteLine("vælg program - fodbold - (1) dansekonkurrence - (2)  password ændring - (3)   for at lukke - (4)");
                     indtast = Console.ReadLine();
+                    Console.Clear();
 
                     switch (indtast)
                     {

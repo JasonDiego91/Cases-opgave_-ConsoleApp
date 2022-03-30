@@ -18,6 +18,7 @@ namespace logiclibrary
             if (!string.IsNullOrEmpty(loginresultat))
             {
                 return loginresultat;
+               
             }
             else
             {

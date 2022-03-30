@@ -22,6 +22,7 @@ namespace threecases
 
 
             Console.WriteLine(result);
+            Console.Clear();
             Console.ReadKey();
         }
 

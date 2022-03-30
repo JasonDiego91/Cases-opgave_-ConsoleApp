@@ -39,7 +39,7 @@ namespace threecases
             string adgangskoderesultat = adgangskodeObjekt.BrugernavnOgKeyword(brugernavn, keyword);
             Console.WriteLine(adgangskoderesultat);
             Console.ReadKey();
-
+            Console.Clear();
         }
 
     }
